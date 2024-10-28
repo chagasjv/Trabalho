@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input[type="text"], input[type="date"], input[type="email"], select {
+            width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer;
+        }
+        input[type="submit"]:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Usuários</h1>
+    <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required>
+        
+        <label for="nacionalidade">Nacionalidade:</label>
+        <input type="text" id="nacionalidade" name="nacionalidade" required>
+        
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero" required>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Outro">Outro</option>
+        </select>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <input type="submit" value="Cadastrar">
+    </form>
+
+    <h2>Lista de Usuários</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Data de Nascimento</th>
+            <th>Nacionalidade</th>
+            <th>Gênero</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>João Pedro</td>
+            <td>18-12-2010</td>
+            <td>Brasileiro</td>
+            <td>Masculino</td>
+            <td>joao@email.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Maria Oliveira</td>
+            <td>15-07-2004</td>
+            <td>Brasileira</td>
+            <td>Feminino</td>
+            <td>maria@email.com</td>
+        </tr>
+    </table>
+</body>
+</html>
